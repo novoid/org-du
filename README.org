@@ -1,14 +1,14 @@
-## Time-stamp: <2017-03-26 22:45:07 vk>
+## Time-stamp: <2017-03-26 22:46:16 vk>
 ## -*- mode: org; coding: utf-8 -*-
 ## This file is best viewed with GNU Emacs Org-mode: http://orgmode.org/
 
 * org-du
 
 This Python 3 script parses parses a list of Org-mode files and
-generates output similar to =[[du][du]]= (disk usage) but with lines of
+generates output similar to [[du][du]] (disk usage) but with lines of
 Org-mode instead of kilobytes.
 
-The purpose of this script is to use its output as the input for =[[https://directory.fsf.org/wiki/XDU][xdu]]=
+The purpose of this script is to use its output as the input for [[https://directory.fsf.org/wiki/XDU][xdu]]
 in order to get a graphical visualization:
 
 : org-du.py my_org_file.org another_org_file.org | xdu
