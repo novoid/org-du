@@ -1,4 +1,4 @@
-## Time-stamp: <2017-03-26 22:46:16 vk>
+## Time-stamp: <2017-03-26 22:50:17 vk>
 ## -*- mode: org; coding: utf-8 -*-
 ## This file is best viewed with GNU Emacs Org-mode: http://orgmode.org/
 
@@ -33,7 +33,6 @@ Get it via [[https://github.com/novoid/org-du][GitHub]] or install it via [[http
 ./org-du.py --help
 #+END_SRC
 
-#+RESULTS:
 #+BEGIN_src
 usage: org-du.py [-h] [-v | --quiet | --version] file [file ...]
 
