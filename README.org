@@ -1,0 +1,94 @@
+## Time-stamp: <2017-03-26 19:26:00 vk>
+## -*- mode: org; coding: utf-8 -*-
+## This file is best viewed with GNU Emacs Org-mode: http://orgmode.org/
+
+* org-du
+
+This Python 3 script parses parses a list of Org-mode files and
+generates output similar to =[[du][du]]= (disk usage) but with lines of
+Org-mode instead of kilobytes.
+
+The purpose of this script is to use its output as the input for =[[https://directory.fsf.org/wiki/XDU][xdu]]=
+in order to get a graphical visualization:
+
+: org-du.py my_org_file.org another_org_file.org | xdu
+
+The script accepts an arbitrary number of files (see your shell for
+possible length limitations).
+
+** Why
+
+GNU/Emacs Org-mode does a great job for outlining (collapsing and
+expanding). However, when you want to get a brief overview on the
+amount of content of each heading (e.g., to locate performance
+optimization possibilities), you need a different tool: org-du
+
+** Installation
+
+Get it via [[https://github.com/novoid/org-du][GitHub]] or install it via [[https://pip.pypa.io/en/stable/][pip]]: ~pip install org-du~
+
+** Usage
+
+#+BEGIN_SRC sh :results output :wrap src
+./org-du.py --help
+#+END_SRC
+
+#+RESULTS:
+#+BEGIN_src
+usage: org-du.py [-h] [-v | --quiet | --version] file [file ...]
+
+org-du parses a list of Org-mode files and generates
+output similar to "du" (disk usage) but with lines
+of Org-mode instead of kilobytes.
+
+positional arguments:
+  file           a list of file names
+
+optional arguments:
+  -h, --help     show this help message and exit
+  -v, --verbose
+  --quiet
+  --version      show program's version number and exit
+
+Verbose description: http://Karl-Voit.at/ FIXXME
+
+:copyright: (c) by Karl Voit <tools@Karl-Voit.at>
+:license: GPL v3 or any later version
+:URL: https://github.com/novoid/org-du
+:bugreports: via github or <tools@Karl-Voit.at>
+:version: 2017-03-26
+#+END_src
+
+** Example
+
+If you apply =org-du= to this =README.org= file, you will see
+following visualization:
+
+: org-du.py README.org
+
+[[file:xdu-screenshot.png]]
+
+You can navigate through sub-headings using your mouse. Navigate back
+by clicking on the leftmost item of the visual tree. Exit with =q=.
+
+** Changelog
+
+- <2017-03-26 Sun>: first version on GitHub and pip
+
+* How to Thank Me
+
+I'm glad you like my tools. If you want to support me:
+
+- Send old-fashioned *postcard* per snailmail - I love personal feedback!
+  - see [[http://tinyurl.com/j6w8hyo][my address]]
+- Send feature wishes or improvements as an issue on GitHub
+- Create issues on GitHub for bugs
+- Contribute merge requests for bug fixes
+- Check out my other cool [[https://github.com/novoid][projects on GitHub]]
+
+* Local Variables                                                  :noexport:
+# Local Variables:
+# mode: auto-fill
+# mode: flyspell
+# eval: (ispell-change-dictionary "en_US")
+# End:
