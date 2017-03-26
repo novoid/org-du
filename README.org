@@ -1,4 +1,4 @@
-## Time-stamp: <2017-03-26 19:26:00 vk>
+## Time-stamp: <2017-03-26 22:45:07 vk>
 ## -*- mode: org; coding: utf-8 -*-
 ## This file is best viewed with GNU Emacs Org-mode: http://orgmode.org/
 
@@ -70,6 +70,18 @@ following visualization:
 
 You can navigate through sub-headings using your mouse. Navigate back
 by clicking on the leftmost item of the visual tree. Exit with =q=.
+
+Another cool usage scenario is when you invoke =org-du= on one host
+(Windows) and visualizing is done on a different host. This can easily
+be accomplished by re-directing the output of the script:
+
+Host A (Windows):
+: org-du.py *.org > org-du-output.txt
+
+Then copying the file =org-du-output.txt= from host A to host B.
+
+Host B (GNU/Linux):
+: xdu < org-du-output.txt
 
 ** Changelog
 
