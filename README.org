@@ -49,7 +49,7 @@ optional arguments:
   --quiet
   --version      show program's version number and exit
 
-Verbose description: http://Karl-Voit.at/ FIXXME
+Verbose description: http://Karl-Voit.at/2017/03/27/org-du/
 
 :copyright: (c) by Karl Voit <tools@Karl-Voit.at>
 :license: GPL v3 or any later version

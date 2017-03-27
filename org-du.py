@@ -36,7 +36,7 @@ DESCRIPTION = "org-du parses a list of Org-mode files and generates\n\
 output similar to \"du\" (disk usage) but with lines\n\
 of Org-mode instead of kilobytes."
 
-EPILOG = u"Verbose description: http://Karl-Voit.at/ FIXXME\n\
+EPILOG = u"Verbose description: http://Karl-Voit.at/2017/03/27/org-du/\n\
 \n\
 :copyright: (c) by Karl Voit <tools@Karl-Voit.at>\n\
 :license: GPL v3 or any later version\n\
