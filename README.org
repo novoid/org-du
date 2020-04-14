@@ -1,4 +1,4 @@
-## Time-stamp: <2017-03-26 22:50:17 vk>
+## Time-stamp: <2020-04-14 18:26:49 vk>
 ## -*- mode: org; coding: utf-8 -*-
 ## This file is best viewed with GNU Emacs Org-mode: http://orgmode.org/
 
@@ -85,6 +85,14 @@ Host B (GNU/Linux):
 ** Changelog
 
 - <2017-03-26 Sun>: first version on GitHub and pip
+
+** Similar Projects
+:PROPERTIES:
+:CREATED:  [2020-04-14 Tue 18:26]
+:END:
+
+- https://github.com/mtekman/org-treeusage.el via [[https://www.reddit.com/r/orgmode/comments/g13ot9/ann_orgtreeusage_peek_at_the_usage_of_your_org/][reddit]]
+  - an in-place visualization as minor mode
 
 * How to Thank Me
 
