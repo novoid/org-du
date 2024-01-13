@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-PROG_VERSION = u"Time-stamp: <2017-03-26 19:12:09 vk>"
+PROG_VERSION = u"Time-stamp: <2024-01-13 18:31:50 vk>"
 
 ## TODO:
 ## - fix parts marked with «FIXXME»
@@ -15,7 +15,7 @@ PROG_VERSION = u"Time-stamp: <2017-03-26 19:12:09 vk>"
 import importlib
 
 
-def save_import(library):
+def safe_import(library):
     try:
         globals()[library] = importlib.import_module(library)
     except ImportError:
@@ -25,10 +25,10 @@ def save_import(library):
 import re
 import sys
 import os
-save_import('argparse')  # for handling command line arguments
-save_import('time')
-save_import('logging')
-save_import('codecs')    # for handling Unicode content in .tagfiles
+safe_import('argparse')  # for handling command line arguments
+safe_import('time')
+safe_import('logging')
+safe_import('codecs')    # for handling Unicode content in .tagfiles
 
 PROG_VERSION_DATE = PROG_VERSION[13:23]
 
