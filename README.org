@@ -93,6 +93,7 @@ Host B (GNU/Linux):
 
 - https://github.com/mtekman/org-treeusage.el via [[https://www.reddit.com/r/orgmode/comments/g13ot9/ann_orgtreeusage_peek_at_the_usage_of_your_org/][reddit]]
   - an in-place visualization as minor mode
+- [[https://mbork.pl/2025-11-17_Showing_size_of_Org_mode_subtrees][Marcin Borkowski: 2025-11-17 Showing size of Org mode subtrees]] in Elisp
 
 * How to Thank Me
 
